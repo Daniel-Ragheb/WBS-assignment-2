@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Ragheb | CV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <div class="profile-card">
+        <img src="images/Avatar.png" alt="avatar for Daniel Ragheb" class="profile-image">
+        <h1>Daniel Ragheb</h1>
+        <p class="title">Management of Information Systems Student</p>
+      </div>
+
+      <section class="sidebar-section">
+        <div class="section-heading-with-action">
+          <h2>Contact</h2>
+        </div>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:danielmagued@aucegypt.edu">danielmagued@aucegypt.edu</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/danielragheb</a></li>
+          <li>Location: Cairo, Egypt</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section" id="skills-section">
+        <div class="section-heading-with-action">
+          <h2>Skills</h2>
+          <button class="action-btn" id="toggleSkillsBtn" type="button">Hide Skills</button>
+        </div>
+        <ul class="tag-list" id="skillsList">
+          <li>HTML &amp; CSS</li>
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>Cybersecurity Fundamentals</li>
+          <li>Data Flow Diagrams</li>
+          <li>ERD &amp; UML Modeling</li>
+          <li>Supply Chain Analysis</li>
+          <li>Problem Solving</li>
+          <li>Team Collaboration</li>
+          <li>Technical Documentation</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section" id="certifications-section">
+        <div class="section-heading-with-action">
+          <h2>Certifications</h2>
+          <button class="action-btn" id="toggleCertificationsBtn" type="button">Hide Certifications</button>
+        </div>
+        <div id="certificationsContent">
+          <div class="mini-card">
+            <h3>CompTIA Security+</h3>
+            <p>Completed foundational training in security operations, threat management, networking, risk, and security best practices.</p>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero section-card">
+        <p class="section-label">Profile</p>
+        <div class="hero-top-bar">
+          <h2>A student building practical systems and technical solution</h2>
+          <button class="mode-toggle-btn" id="themeToggleBtn" type="button">Switch to Dark Mode</button>
+        </div>
+        <p>
+          I am a Management Information Systems student at the American University in Cairo with strong interest in
+          web-based systems, process improvement, cybersecurity, and backend development. I enjoy turning real business
+          problems into structured digital solutions through careful analysis, clean design, and practical implementation.
+        </p>
+        <p id="welcomeMessage" class="welcome-message" aria-live="polite"></p>
+      </section>
+
+      <section class="section-card">
+        <p class="section-label">Education</p>
+        <div class="timeline-item">
+          <div class="timeline-head">
+            <h3>The American University in Cairo</h3>
+            <span>Expected Graduation: 2026</span>
+          </div>
+          <p class="subtitle">Bachelor's Degree in Management of Information and Communication Technology</p>
+          <p>
+            Relevant focus areas include systems analysis and design, database modeling, operations management,
+            logistics workflow improvement, and web-based system development.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-card" id="projects-section">
+        <div class="section-heading-with-action main-section-header">
+          <p class="section-label">Projects &amp; Experience</p>
+          <button class="action-btn" id="toggleProjectsBtn" type="button">Hide Projects</button>
+        </div>
+
+        <div id="projectsContent">
+          <article class="timeline-item project-item">
+            <div class="timeline-head">
+              <h3>DHL Workflow Improvement System</h3>
+              <span>Academic Graduation Project</span>
+            </div>
+            <p>
+              Worked on a web-based system concept to improve coordination between sales, pricing, operations, and billing.
+              Contributed to process mapping, documentation, and interface planning for smoother departmental handoffs.
+            </p>
+            <button class="project-details-btn" type="button" data-target="project-detail-1">Show Details</button>
+            <div class="project-details" id="project-detail-1">
+              <p>
+                This project focused on analyzing departmental bottlenecks and proposing a more unified digital workflow
+                to reduce delays, improve visibility, and support smoother internal coordination.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item project-item">
+            <div class="timeline-head">
+              <h3>DocLog Document Archiving Concept</h3>
+              <span>Systems Design Project</span>
+            </div>
+            <p>
+              Designed a document archiving and retrieval concept with structured navigation, barcode-based organization,
+              and user-friendly search and filtering features.
+            </p>
+            <button class="project-details-btn" type="button" data-target="project-detail-2">Show Details</button>
+            <div class="project-details" id="project-detail-2">
+              <p>
+                The concept emphasized accessibility, faster lookup, and more organized storage through clear categorization,
+                retrieval logic, and intuitive user interaction patterns.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item project-item">
+            <div class="timeline-head">
+              <h3>Backend Learning Projects</h3>
+              <span>Personal Development</span>
+            </div>
+            <p>
+              Built foundational programming and backend skills through hands-on practice in Python, including projects
+              related to cybersecurity learning and API-oriented thinking.
+            </p>
+            <button class="project-details-btn" type="button" data-target="project-detail-3">Show Details</button>
+            <div class="project-details" id="project-detail-3">
+              <p>
+                These projects strengthened problem-solving ability, backend logic understanding, and practical coding habits
+                through continuous experimentation and structured self-learning.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <p class="section-label">Achievements</p>
+        <div class="grid-two">
+          <div class="mini-card">
+            <h3>Academic Systems Modeling</h3>
+            <p>Created multiple DFDs, ERDs, UML diagrams, and interface concepts for university coursework and case-based projects.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Technical Growth</h3>
+            <p>Developed a structured roadmap toward cybersecurity and backend development with emphasis on practical skill building.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <p class="section-label">Contact Form</p>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+          </div>
+
+          <button class="submit-btn" type="submit">Send Message</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
