@@ -402,4 +402,46 @@ body.dark-mode .submit-btn:hover {
   .section-heading-with-action {
     align-items: flex-start;
   }
+  /* Navigation Styles */
+.nav-link {
+  color: var(--text);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-link:hover, .nav-link.active-link {
+  background: var(--primary-soft);
+  text-decoration: none;
+}
+
+body.dark-mode .nav-link.active-link {
+  background: #1e3a8a; /* Dark mode active state */
+}
+
+/* API Card Adjustments */
+.github-repo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.repo-language {
+  display: inline-block;
+  background: var(--primary-soft);
+  color: var(--primary);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+body.dark-mode .repo-language {
+  background: #172554;
+  color: #93c5fd;
+}
 }
