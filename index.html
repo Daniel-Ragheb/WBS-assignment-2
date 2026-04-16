@@ -8,42 +8,23 @@
 </head>
 <body>
   <div class="page-shell">
+    
     <aside class="sidebar">
       <div class="profile-card">
         <img src="images/Avatar.png" alt="avatar for Daniel Ragheb" class="profile-image">
         <h1>Daniel Ragheb</h1>
         <p class="title">Management of Information Systems Student</p>
       </div>
-<nav class="sidebar-nav" style="margin-top: 20px;">
-  <ul style="list-style: none; padding: 0;">
-    <li style="margin-bottom: 10px;"><a href="#home" class="nav-link">Home</a></li>
-    <li style="margin-bottom: 10px;"><a href="#skills" class="nav-link">Skills</a></li>
-    <li style="margin-bottom: 10px;"><a href="#projects" class="nav-link">Projects</a></li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
-  </ul>
-</nav>
 
-<main>
-  <section id="home" class="section-card tab-section active">
-    </section>
+      <nav class="sidebar-nav" style="margin-top: 20px;">
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 10px;"><a href="#home" class="nav-link active-link">Home</a></li>
+          <li style="margin-bottom: 10px;"><a href="#skills" class="nav-link">Skills</a></li>
+          <li style="margin-bottom: 10px;"><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-  <section id="skills" class="section-card tab-section" style="display: none;">
-    </section>
-
-  <section id="projects" class="section-card tab-section" style="display: none;">
-    <div class="section-heading-with-action">
-      <h2>Live GitHub Projects</h2>
-    </div>
-    
-    <div id="github-loading" style="font-weight: bold; color: var(--primary);">Loading repositories...</div>
-    <div id="github-error" style="color: red; display: none;"></div>
-    
-    <div id="github-projects-container" class="grid-two"></div>
-  </section>
-
-  <section id="contact" class="section-card tab-section" style="display: none;">
-    </section>
-</main>
       <section class="sidebar-section">
         <div class="section-heading-with-action">
           <h2>Contact</h2>
@@ -61,12 +42,12 @@
           <button class="action-btn" id="toggleSkillsBtn" type="button">Hide Skills</button>
         </div>
         <ul class="tag-list" id="skillsList">
-          <li>HTML &amp; CSS</li>
+          <li>HTML & CSS</li>
           <li>Python</li>
           <li>FastAPI</li>
           <li>Cybersecurity Fundamentals</li>
           <li>Data Flow Diagrams</li>
-          <li>ERD &amp; UML Modeling</li>
+          <li>ERD & UML Modeling</li>
           <li>Supply Chain Analysis</li>
           <li>Problem Solving</li>
           <li>Team Collaboration</li>
@@ -74,152 +55,130 @@
         </ul>
       </section>
 
-      <section class="sidebar-section" id="certifications-section">
+      <section class="sidebar-section">
         <div class="section-heading-with-action">
           <h2>Certifications</h2>
           <button class="action-btn" id="toggleCertificationsBtn" type="button">Hide Certifications</button>
         </div>
         <div id="certificationsContent">
-          <div class="mini-card">
-            <h3>CompTIA Security+</h3>
-            <p>Completed foundational training in security operations, threat management, networking, risk, and security best practices.</p>
-          </div>
+          <h3>CompTIA Security+</h3>
+          <p>Completed foundational training in security operations, threat management, networking, risk, and security best practices.</p>
         </div>
       </section>
     </aside>
 
-    <main class="main-content">
-      <section class="hero section-card">
-        <p class="section-label">Profile</p>
-        <div class="hero-top-bar">
+    <main>
+      <div id="welcomeMessage" style="display: none; padding: 10px; background: var(--primary-soft); color: var(--primary); text-align: center; border-radius: 8px; margin-bottom: 20px; font-weight: bold;"></div>
+      
+      <section id="home" class="tab-section active" style="display: block;">
+        <section class="section-card">
+          <div class="section-heading-with-action">
+            <p class="section-label">Profile</p>
+            <button class="mode-toggle-btn" id="themeToggleBtn" type="button">Switch to Dark Mode</button>
+          </div>
           <h2>A student building practical systems and technical solution</h2>
-          <button class="mode-toggle-btn" id="themeToggleBtn" type="button">Switch to Dark Mode</button>
-        </div>
-        <p>
-          I am a Management Information Systems student at the American University in Cairo with strong interest in
-          web-based systems, process improvement, cybersecurity, and backend development. I enjoy turning real business
-          problems into structured digital solutions through careful analysis, clean design, and practical implementation.
-        </p>
-        <p id="welcomeMessage" class="welcome-message" aria-live="polite"></p>
+          <p>I am a Management Information Systems student at the American University in Cairo with strong interest in web-based systems, process improvement, cybersecurity, and backend development. I enjoy turning real business problems into structured digital solutions through careful analysis, clean design, and practical implementation.</p>
+        </section>
+
+        <section class="section-card">
+          <p class="section-label">Education</p>
+          <h3>The American University in Cairo</h3>
+          <p style="font-weight: bold;">Expected Graduation: 2026</p>
+          <p>Bachelor's Degree in Management of Information and Communication Technology</p>
+          <p style="margin-top: 10px;">Relevant focus areas include systems analysis and design, database modeling, operations management, logistics workflow improvement, and web-based system development.</p>
+        </section>
       </section>
 
-      <section class="section-card">
-        <p class="section-label">Education</p>
-        <div class="timeline-item">
-          <div class="timeline-head">
-            <h3>The American University in Cairo</h3>
-            <span>Expected Graduation: 2026</span>
+      <section id="skills" class="tab-section" style="display: none;">
+        <section class="section-card">
+          <p class="section-label">Achievements</p>
+          <div class="grid-two">
+            <div class="mini-card">
+              <h3>Academic Systems Modeling</h3>
+              <p>Created multiple DFDs, ERDs, UML diagrams, and interface concepts for university coursework and case-based projects.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Technical Growth</h3>
+              <p>Developed a structured roadmap toward cybersecurity and backend development with emphasis on practical skill building.</p>
+            </div>
           </div>
-          <p class="subtitle">Bachelor's Degree in Management of Information and Communication Technology</p>
-          <p>
-            Relevant focus areas include systems analysis and design, database modeling, operations management,
-            logistics workflow improvement, and web-based system development.
-          </p>
-        </div>
+        </section>
       </section>
 
-      <section class="section-card" id="projects-section">
-        <div class="section-heading-with-action main-section-header">
-          <p class="section-label">Projects &amp; Experience</p>
-          <button class="action-btn" id="toggleProjectsBtn" type="button">Hide Projects</button>
-        </div>
+      <section id="projects" class="tab-section" style="display: none;">
+        <section class="section-card">
+          <div class="section-heading-with-action">
+            <h2>Live GitHub Projects</h2>
+          </div>
+          <div id="github-loading" style="font-weight: bold; color: var(--primary);">Loading repositories...</div>
+          <div id="github-error" style="color: red; display: none;"></div>
+          <div id="github-projects-container" class="grid-two"></div>
+        </section>
 
-        <div id="projectsContent">
-          <article class="timeline-item project-item">
-            <div class="timeline-head">
+        <section class="section-card">
+          <div class="section-heading-with-action">
+            <p class="section-label">Projects & Experience</p>
+            <button class="action-btn" id="toggleProjectsBtn" type="button">Hide Projects</button>
+          </div>
+          
+          <div id="projectsContent">
+            <div class="project-item" style="margin-bottom: 20px;">
               <h3>DHL Workflow Improvement System</h3>
-              <span>Academic Graduation Project</span>
+              <p style="font-weight: bold;">Academic Graduation Project</p>
+              <p>Worked on a web-based system concept to improve coordination between sales, pricing, operations, and billing. Contributed to process mapping, documentation, and interface planning for smoother departmental handoffs.</p>
+              <button class="project-details-btn action-btn" data-target="dhl-details" style="margin-top: 10px;">Show Details</button>
+              <div id="dhl-details" class="project-details" style="margin-top: 10px; display: none;">
+                <p>This project focused on analyzing departmental bottlenecks and proposing a more unified digital workflow to reduce delays, improve visibility, and support smoother internal coordination.</p>
+              </div>
             </div>
-            <p>
-              Worked on a web-based system concept to improve coordination between sales, pricing, operations, and billing.
-              Contributed to process mapping, documentation, and interface planning for smoother departmental handoffs.
-            </p>
-            <button class="project-details-btn" type="button" data-target="project-detail-1">Show Details</button>
-            <div class="project-details" id="project-detail-1">
-              <p>
-                This project focused on analyzing departmental bottlenecks and proposing a more unified digital workflow
-                to reduce delays, improve visibility, and support smoother internal coordination.
-              </p>
-            </div>
-          </article>
 
-          <article class="timeline-item project-item">
-            <div class="timeline-head">
+            <div class="project-item" style="margin-bottom: 20px;">
               <h3>DocLog Document Archiving Concept</h3>
-              <span>Systems Design Project</span>
+              <p style="font-weight: bold;">Systems Design Project</p>
+              <p>Designed a document archiving and retrieval concept with structured navigation, barcode-based organization, and user-friendly search and filtering features.</p>
+              <button class="project-details-btn action-btn" data-target="doclog-details" style="margin-top: 10px;">Show Details</button>
+              <div id="doclog-details" class="project-details" style="margin-top: 10px; display: none;">
+                <p>The concept emphasized accessibility, faster lookup, and more organized storage through clear categorization, retrieval logic, and intuitive user interaction patterns.</p>
+              </div>
             </div>
-            <p>
-              Designed a document archiving and retrieval concept with structured navigation, barcode-based organization,
-              and user-friendly search and filtering features.
-            </p>
-            <button class="project-details-btn" type="button" data-target="project-detail-2">Show Details</button>
-            <div class="project-details" id="project-detail-2">
-              <p>
-                The concept emphasized accessibility, faster lookup, and more organized storage through clear categorization,
-                retrieval logic, and intuitive user interaction patterns.
-              </p>
-            </div>
-          </article>
 
-          <article class="timeline-item project-item">
-            <div class="timeline-head">
+            <div class="project-item">
               <h3>Backend Learning Projects</h3>
-              <span>Personal Development</span>
+              <p style="font-weight: bold;">Personal Development</p>
+              <p>Built foundational programming and backend skills through hands-on practice in Python, including projects related to cybersecurity learning and API-oriented thinking.</p>
+              <button class="project-details-btn action-btn" data-target="backend-details" style="margin-top: 10px;">Show Details</button>
+              <div id="backend-details" class="project-details" style="margin-top: 10px; display: none;">
+                <p>These projects strengthened problem-solving ability, backend logic understanding, and practical coding habits through continuous experimentation and structured self-learning.</p>
+              </div>
             </div>
-            <p>
-              Built foundational programming and backend skills through hands-on practice in Python, including projects
-              related to cybersecurity learning and API-oriented thinking.
-            </p>
-            <button class="project-details-btn" type="button" data-target="project-detail-3">Show Details</button>
-            <div class="project-details" id="project-detail-3">
-              <p>
-                These projects strengthened problem-solving ability, backend logic understanding, and practical coding habits
-                through continuous experimentation and structured self-learning.
-              </p>
+          </div>
+        </section>
+      </section>
+
+      <section id="contact" class="tab-section" style="display: none;">
+        <section class="section-card">
+          <p class="section-label">Contact Form</p>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name">
             </div>
-          </article>
-        </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+            </div>
+            <button class="submit-btn" type="submit">Send Message</button>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </section>
       </section>
 
-      <section class="section-card">
-        <p class="section-label">Achievements</p>
-        <div class="grid-two">
-          <div class="mini-card">
-            <h3>Academic Systems Modeling</h3>
-            <p>Created multiple DFDs, ERDs, UML diagrams, and interface concepts for university coursework and case-based projects.</p>
-          </div>
-          <div class="mini-card">
-            <h3>Technical Growth</h3>
-            <p>Developed a structured roadmap toward cybersecurity and backend development with emphasis on practical skill building.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-card">
-        <p class="section-label">Contact Form</p>
-        <form id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
-          </div>
-
-          <button class="submit-btn" type="submit">Send Message</button>
-          <p id="formMessage" class="form-message" aria-live="polite"></p>
-        </form>
-      </section>
     </main>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
